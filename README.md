@@ -1,8 +1,8 @@
 # PlateCam
 
-PlateCam is an **Automated Number Plate Recognition (ANPR)** system that combines deep learning and computer vision techniques to detect and recognize vehicle number plates. The project includes a web-based application built using Django, enabling you to interact with the ANPR system through an intuitive interface.
+An **Automated Number Plate Recognition (ANPR)** system that combines deep learning and computer vision techniques to detect and recognize vehicle number plates. The project includes a web-based application built using Django, enabling you to interact with the ANPR system through an intuitive interface.
 
-![demo](https://github.com/rahulogoel/PlateCam/blob/main/demo-gif.gif)
+![demo](https://github.com/rahulogoel/PlateCam/blob/main/demo.gif)
 
 ## Features
 
@@ -70,7 +70,7 @@ https://www.kaggle.com/datasets/andrewmvd/car-plate-detection/data
 
 - Enhance OCR accuracy by fine-tuning parameters.
 - Expand dataset for improved model generalization.
-- Try different OCR models like Keras-OCR or EasyOCR as while testing the model I came to know that Tesseract is only good for high-resolution images but has poor precision for low-resolution images. So we can try other models too.[Check comparison blog post](https://thangasami.medium.com/tesseract-vs-keras-ocr-vs-easyocr-ec8500b9455b)
+- Try different OCR models like Keras-OCR or EasyOCR as while testing the model I came to know that Tesseract is only good for high-resolution images but has poor precision for low-resolution images. So we can try other models too. [Check comparison blog post](https://thangasami.medium.com/tesseract-vs-keras-ocr-vs-easyocr-ec8500b9455b)
 
 ## License
 
