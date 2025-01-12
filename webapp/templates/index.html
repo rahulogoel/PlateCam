@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\style.css">
+    <title>PlateCam</title>
+</head>
+
+<body>
+    <header>
+        <h1>PlateCam: Automatic Number-Plate Recognition</h1>
+    </header>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="vehicle_image" required>
+        <button class="btn" type="submit">Upload</button>
+    </form>
+
+    {% if processed %}
+    <div class="output-section">
+        <div class="row">
+            <div class="card">
+                <h2>Uploaded Image:</h2>
+                <div class="image-container">
+                    <img src="{{ uploaded_image_url }}" alt="Uploaded Image">
+                </div>
+            </div>
+            <div class="card">
+                <h2>Image with Bounding Box:</h2>
+                <div class="image-container">
+                    <img src="{{ bounded_plate_image_url }}" alt="Image with Bounding Box">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>Cropped License Plate:</h2>
+                <div class="image-container">
+                    <img src="{{ plate_image_url }}" alt="License Plate Image">
+                </div>
+            </div>
+            <div class="card">
+                <h2>Extracted Text:</h2>
+                <div class="text-output">
+                    <p>{{ extracted_text }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+</body>
+
+</html>
