@@ -47,7 +47,7 @@ https://www.kaggle.com/datasets/andrewmvd/car-plate-detection/data
 2. Clone the repository inside `myproject` folder:
 
    ```bash
-   git clone https://github.com/your-username/PlateCam.git
+   git clone https://github.com/rahulogoel/PlateCam.git
    cd webapp
    ```
 
@@ -66,7 +66,7 @@ https://www.kaggle.com/datasets/andrewmvd/car-plate-detection/data
 
 5. Access the application at `http://127.0.0.1:8000/`.
 
-## Future Work
+## TODOS
 
 - Enhance OCR accuracy by fine-tuning parameters.
 - Expand dataset for improved model generalization.
